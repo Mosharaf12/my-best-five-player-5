@@ -1,6 +1,6 @@
 
 header{
-    background-image: linear-gradient(180deg, #00000093, #111111), url(images/cover.png) ;
+    background-image: linear-gradient(90deg, #0f0b0b93, #171616), url(images/cover.png) ;
     background-size: cover;
     background-repeat: no-repeat;
 }

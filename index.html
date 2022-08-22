@@ -129,35 +129,48 @@
 
                 <div class="col-md-3 col-12">
                     <div class="card text-bg-dark mb-3">
+
                         <div class="card-header">
                            <h4 class="text-center">Selected-Best-Five</h4> 
                         </div>
                         <div class="card-body">
-                          <ol></ol>
+                          <ol id="select-list"> </ol>
                         
                         </div>
                       </div>
+
                     <div class="card text-bg-dark mb-3">
                         <div class="card-header">
                            <h4 class="text-center">Budget</h4> 
                         </div>
                         <div class="card-body mt-2">
                           <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="d-inline me-3 ">Per Player</h6> <input type="number" class="from-control w-50 d-inline">
+                            <h6 class="d-inline me-3 ">Per Player</h6> <input id="player-field" type="number" class="from-control w-50 d-inline">
                           </div>
-                          <button class="btn btn-primary w-100 fw-semibold text-dark mt-3"> Calculate</button>
-                          <h6 class="mt-4 mb-5"> Player Expenses: $<span>0</span></h6>
+                          <!-- Calculator  -->
+
+                          <button id="first-calculate" class="btn btn-primary w-100 fw-semibold text-dark mt-3"> Calculate</button>
+
+                          <!-- player Expenses  -->
+
+                          <h6 class="mt-4 mb-5"> Player Expenses: $<span id="player-cost">0</span></h6>
+
+                          <!-- manager  -->
                           <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="d-inline me-3 my-3 ">Manager</h6> <input type="number" class="from-control w-50 d-inline">
+                            <h6 class="d-inline me-3 my-3 ">Manager</h6> <input id="manager-field" type="number" class="from-control w-50 d-inline">
                             
                           </div>
+
+                          <!-- coach  -->
                           <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="d-inline me-3 ">Coach</h6> <input type="number" class="from-control w-50 d-inline">
+                            <h6 class="d-inline me-3 ">Coach</h6> <input id="coach-field" type="number" class="from-control w-50 d-inline">
 
                           </div>
 
-                          <button class="btn btn-primary w-100 fw-semibold text-dark mt-3"> Calculate Total</button>
-                          <h6 class="mt-4">Total: $<span>0</span></h6>
+                          <!-- total calculate  -->
+
+                          <button id="btn-calculate" class="btn btn-primary w-100 fw-semibold text-dark mt-3"> Calculate Total</button>
+                          <h6 class="mt-4">Total: $<span id="total-result">0</span></h6>
 
                           </div>
                         
